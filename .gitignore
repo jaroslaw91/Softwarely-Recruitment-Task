@@ -1,0 +1,12 @@
+node_modules
+/build
+/coverage/lcov-report
+/coverage/*xml
+/coverage/*json
+/coverage/*info
+/docs
+package-lock.json
+.DS_Store
+.env
+npm-debug.log*
+.dccache
