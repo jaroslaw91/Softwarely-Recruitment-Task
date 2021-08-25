@@ -5,7 +5,6 @@ node_modules
 /coverage/*json
 /coverage/*info
 /docs
-package-lock.json
 .DS_Store
 .env
 npm-debug.log*
