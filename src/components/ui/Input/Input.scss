@@ -1,0 +1,57 @@
+.input {
+	cursor: pointer;
+	padding-left: var(--padding-small);
+	margin-bottom: var(--margin-tiny);
+	display: block;
+	position: relative;
+
+	&__input {
+		cursor: pointer;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+	}
+
+	&__fake {
+		top: 0;
+		left: var(--padding-tiny);
+		background-color: var(--input-color);
+		color: var(--text3-color);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+
+		&--checkbox {
+			left: calc(var(--padding-tiny) + 1px);
+			width: 18px;
+			height: 18px;
+		}
+
+		&--radio {
+			width: 20px;
+			height: 20px;
+			border-radius: 100px;
+		}
+
+		&:hover {
+			background-color: var(--input-hover-color);
+		}
+	}
+
+	&__label {
+		margin-left: var(--margin-small);
+		padding: 0 var(--padding-tiny);
+		display: block;
+
+		&--nomargin {
+			margin: 0;
+		}
+
+		&--description {
+			color: var(--text2-color);
+			display: block;
+		}
+	}
+}
