@@ -31,7 +31,7 @@ const Input = ({
 			<Fragment>
 				<input
 					className="input__input"
-					type={type}
+					type="checkbox"
 					id={id}
 					name={name}
 					value={value}
