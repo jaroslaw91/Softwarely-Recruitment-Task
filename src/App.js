@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import 'assets/styles/theme.scss'
 
 import data from 'assets/data/list.json'
 import List from 'components/global/List'
+import Heading from 'components/ui/Heading'
 
 const App = () => (
-	<div>
-		Softwarely Recruitment Task
+	<Fragment>
+		<Heading text="Softwarely Recruitment Task" />
 		<List data={data} />
-	</div>
+	</Fragment>
 )
 
 ReactDOM.render(<App />, document.getElementById('root'))
