@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Input from './../../../components/ui/Input'
+import Input from 'components/ui/Input'
 
 describe('<Input /> test 1', () => {
 	let wrapper
@@ -28,6 +28,14 @@ describe('<Input /> test 1', () => {
 
 	it('expect class `.input__label`', () => {
 		expect(wrapper.find('.input__label').exists()).toBe(true)
+	})
+
+	it('<Input /> simulate checked', () => {
+		const input = wrapper.find('input')
+
+		input.simulate('change', { target: { checked: true } })
+
+		wrapper.update()
 	})
 })
 
