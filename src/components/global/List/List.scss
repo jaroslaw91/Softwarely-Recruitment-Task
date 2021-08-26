@@ -1,0 +1,50 @@
+.tree {
+	margin: 0 auto;
+	padding: var(--padding-medium);
+	max-width: 600px;
+	background-color: var(--row-color-1);
+
+	&-list {
+		padding: var(--padding-tiny) 0 var(--padding-tiny) var(--padding-medium);
+		position: relative;
+		animation-name: fade;
+		animation-duration: 0.2s;
+
+		&__line {
+			&::after {
+				content: '';
+				top: 40px;
+				left: 50px;
+				height: calc(100% - 40px);
+				width: 1px;
+				background-color: black;
+				display: block;
+				position: absolute;
+				animation-name: fade;
+				animation-duration: 1s;
+			}
+		}
+
+		&__item--line {
+			&::before {
+				content: '';
+				top: 20px;
+				left: 20px;
+				height: 1px;
+				width: 10px;
+				background-color: black;
+				display: block;
+				position: absolute;
+			}
+		}
+	}
+
+	@keyframes fade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}

@@ -10,6 +10,7 @@ import { FiPlus, FiMinus } from 'react-icons/fi'
  * @prop {string} description - label description, default: `''`
  * @prop {string} type - type of input, default: `''`
  * @prop {string} id - input id
+ * @prop {string} color - label color
  * @prop {string} name - input name
  * @prop {string} value - input value
  * @prop {bool} checked - input is checked, default: `false`
@@ -22,6 +23,7 @@ const Input = ({
 	type,
 	id,
 	name,
+	color,
 	value,
 	checked,
 	onChange
@@ -31,7 +33,7 @@ const Input = ({
 			<Fragment>
 				<input
 					className="input__input"
-					type={type}
+					type="checkbox"
 					id={id}
 					name={name}
 					value={value}
@@ -45,9 +47,14 @@ const Input = ({
 			</Fragment>
 		)}
 
-		<span className={type ? 'input__label' : 'input__label--nomargin'}>
+		<span
+			className={`input__${color} ${
+				type ? 'input__label' : 'input__label--nomargin'
+			}`}>
 			{label}
-			<span className="input__label--description">{description}</span>
+			<span className={`input__label--description input__${color}`}>
+				{description}
+			</span>
 		</span>
 	</label>
 )
@@ -70,6 +77,7 @@ Input.propTypes = {
 	description: PropTypes.string,
 	type: PropTypes.string,
 	id: PropTypes.string.isRequired,
+	color: PropTypes.string,
 	name: PropTypes.string,
 	value: PropTypes.string.isRequired,
 	checked: PropTypes.bool,
@@ -81,6 +89,7 @@ Input.propTypes = {
  * @type {object}
  */
 Input.defaultProps = {
+	color: 'color-1',
 	name: '',
 	description: '',
 	type: '',
