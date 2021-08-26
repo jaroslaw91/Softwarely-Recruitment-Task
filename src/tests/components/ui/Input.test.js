@@ -10,6 +10,7 @@ describe('<Input /> test 1', () => {
 		description: 'Description',
 		type: 'radio',
 		id: '1',
+		color: 'color-1',
 		name: 'name',
 		value: '1',
 		checked: false

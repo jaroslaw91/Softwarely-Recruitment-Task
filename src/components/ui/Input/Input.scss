@@ -5,6 +5,14 @@
 	display: block;
 	position: relative;
 
+	&__color-1 {
+		background-color: var(--row-color-1);
+	}
+
+	&__color-2 {
+		background-color: var(--row-color-2);
+	}
+
 	&__input {
 		cursor: pointer;
 		width: 0;
@@ -47,6 +55,8 @@
 
 		&--nomargin {
 			margin: 0;
+			padding-left: var(--padding-tiny);
+			display: block;
 		}
 
 		&--description {
