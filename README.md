@@ -1,25 +1,12 @@
-#
-
-<div style='font-size: 18px;display: flex; width: 500; justify-content: space-between;'>
-
-<div style='margin: 0 auto; text-align: center'>
-🤖 Monitoring
-
-<br />
-<br />
+## 🤖 Monitoring
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ab036707-ff09-4a0e-b7da-f7a4bba8c907/deploy-status)](https://app.netlify.com/sites/elastic-rosalind-6fffd6/deploys)
 
 [![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6Imphcm9zbGF3OTEiLCJyZXBvMSI6IlJlY3J1aXRtZW50LVRhc2siLCJhdXRob3JJZCI6Mjk3NTgsImlhdCI6MTYyOTkxMDc4Nn0.xQk35rnp-9QmT63Z08AqHxqvVYzPovChExVmQniox4E)](https://www.deepcode.ai/app/gh/jaroslaw91/Recruitment-Task/_/dashboard?utm_content=gh%2Fjaroslaw91%2FRecruitment-Task)
 
-</div>
-
-<div style='background: #444; width: 1px; margin: 10px auto'></div>
-
-<div style='margin: 0 auto; text-align: center'>
-🚀 Tests
-
 <br />
+
+## 🚀 Tests
 
 ![Badge Statements](coverage/badge-statements.svg)
 
@@ -29,19 +16,12 @@
 
 ![Badge Branches](coverage/badge-branches.svg)
 
-</div>
-
-</div>
-
-#
-
 <br />
 
 # Softwarely-Recruitment-Task
 
 Recruitment task for [Softwarely](https://softwarely.pl/).
 
-<br />
 <br />
 
 ## 📎 Description
@@ -67,13 +47,21 @@ Recruitment Task.
 ## 📺 Demo
 
 ```
-Go to https://softwarely-recruitment-task.netlify.app/
+Go to [DEMO](https://softwarely-recruitment-task.netlify.app/)
 ```
 
-## 💿 Install
+## 💿 Install & config
 
 ```
 - clone this repository
 - install packages in the main directory: `npm install` or `npm i`
+
 - run App: `npm run start`
+- build App: `npm run build`
+
+- test App: `npm run test`
+- generate coverage: `npm run test:coverage`
+- generate badges: `npm run test:badges`
+
+- docs generate: `npm run jsdoc`
 ```
